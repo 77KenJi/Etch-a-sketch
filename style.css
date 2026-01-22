@@ -1,29 +1,116 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.header{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    width: 400px;
-    justify-content: space-around;
-    margin-bottom: 20px;
+/*  COLOR PALETTE
 
+    BLUE #04ABAE
+    RED #CC0000
+    YELLOW #FFE600
+    SHADOW #9E4C4C
+    GRAY #ACACAC  */
+    @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+body {
+    
+    font-family:sans-serif;
+    padding: 20px 0px;
+    /* margin: 0 auto; */
+    /* width: 100vw;
+    height: 100vh; */
 }
-.footer{
-    display:flex;
-    flex-direction: row;
+.title {
+    display: flex;
     align-items: center;
-    width: 500px;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: space-evenly;
 }
-.board{
-    height: 450px;
-    width: 400px;
+
+#title2 {
+    font-size: 60px;
+}
+.sketch-pad {
+    width: 800px;
+    height: 700px;
+    padding-bottom: 75px;
+    border: 1px solid black;
+    margin: auto;
+    
+}
+
+ .container {
     display: grid;
-    border: 1px solid;
+    width: 520px;
+    height: 400px;
+    background-color: #e0e0e0;
+    border:solid black ;
+    margin: auto; 
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.cell {
+  border:1px solid black;
+  
+  
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  transition: all 1.3%;
+}
+
+.colorBtn {
+  width: 75px;
+  height: 35px;
+  border-radius:;
+ 
+  color: rgb(36, 36, 36);
+  font-family: 'sans-serif';
+  font-size: large;
+}
+
+input {
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-size: large;
+}
+
+.resize {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-top: 20px;
+}
+
+.sizeBtn {
+  font-family:'sans-serif';
+  font-size: large;
+  border-radius: 5px;
+  width: 75px;
+}
+
+button:hover {
+  
+  cursor:pointer;
+}
+
+button:active {
+  box-shadow: inset 1px 1px 1px 3px #534b00 ;
+}
+
+.colorBtn:focus {
+  background-color: #fff9cd;
+}
+
+.footer {
+  font-family: 'sans-serif';
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+  font-weight: 900;
+}
+a {
+  text-decoration: none;
+  color: #cc0000;
+  
 }
