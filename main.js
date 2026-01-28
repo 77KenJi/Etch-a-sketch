@@ -36,3 +36,14 @@ function resetContainer() {
   let squares = container.querySelectorAll("div");
   squares.forEach((div) => (div.style.backgroundColor = "#e0e0e0"));
 }
+function promptNewSize() {
+  let input = prompt("Enter number of squares per side (2–100):");
+
+  let size = Number(input);
+
+  if (size >= 2 && size <= 100) {
+    populateContainer(size);
+  } else {
+    alert("Please enter a number between 2 and 100.");
+  }
+}
